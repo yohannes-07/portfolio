@@ -34,20 +34,20 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Restaurant Web App",
-    description: "Restaurant NextJs app",
+    title: "Amharic Text Summarization",
+    description: "Fine tuned mt5 model for amharic text summarization",
     image: "/images/projects/4.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/yohannes-07/Restaurant-app-NextJS",
+      tag: ["All", "AI"],
+    gitUrl: "https://huggingface.co/yohannesahunm/mt5-small-Amharic-text-summaization",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "Tenaye Medical App",
-    description: "Tenaye  medical app(Doctors Appointment)",
+    title: "Chatbot",
+    description: "Made with langgraph, FastAPI and React",
     image: "/images/projects/5.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/yohannes-07/Doctors-appointment",
+    tag: ["All", "AI"],
+    gitUrl: "https://github.com/yohannes-07/chatbot",
     previewUrl: "/",
   },
   {
@@ -97,8 +97,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Backend"}
+          name="AI"
+          isSelected={tag === "AI"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
