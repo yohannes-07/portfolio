@@ -109,7 +109,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-           I&apos;m a fourth-year software engineering student specializing in AI. With a strong foundation in full-stack web development and various frameworks, proficiency in managing relational and non-relational databases, and a solid grasp of Agile methodologies, data structures, algorithms, and machine learning foundations, I&apos;m passionate about crafting innovative solutions and approaching complex challenges in the ever-evolving world of technology. My goal is to make a meaningful impact by harnessing the power of software engineering and AI to shape the future.
+           AI-focused Software Engineer from Addis Ababa University with hands-on experience in AI, cloud systems, and full-stack development. At Addis Home Finder, I built a media monitoring system using fingerprinting algorithms for ad detection. With Startup Agile, I developed FastAPI/AWS tools, LLM-powered APIs, and a Discord bot for crypto traders. At AAU, I contributed to ORIDMS and government analytics. On Aladia’s analytics team, I engineered a CDC pipeline using GCP, MongoDB, and Apache Beam. Passionate about solving complex problems and collaborating in tech.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
