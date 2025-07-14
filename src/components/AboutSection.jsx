@@ -9,21 +9,21 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2 flex gap-12 ">
-        <div>    <li>Python</li>
+        <div><li>Python</li>
         <li>JavaScript</li>
         <li>TypeScript</li>
-        <li>React</li>
-        <li>MongoDB</li></div>
-        <div>  <li>ReactJS</li>
-        <li>NextJs</li>
+        <li>React.js</li>
+        <li>Next.js</li></div>
+        <div><li>Nest.js</li>
+        <li>Express.js</li>
         <li>NodeJs</li>
         <li>ExpressJs</li>
-        <li>MongoDB</li></div>
-        <div>  <li>MySQL</li>
-        <li>Tailwind, Bootstrap</li>
-        <li>Git</li>
-        <li>Dart</li>
-        <li>Flutter</li></div>
+        <li></li>SQL</div>
+        <div><li>FastAPI</li>
+        <li>Django, Flask</li>
+        <li>Cloud(AWS, GCP)</li>
+        <li>Apache Beam, Dataflow</li>
+        <li>Langchain, RAG, Agents</li></div>
         
        
     
