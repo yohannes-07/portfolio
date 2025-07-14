@@ -25,11 +25,11 @@ const HeroSection = () => {
               sequence={[
                 "Yohannes",
                 1000,
-                "Web Developer",
+                "Software Engineer",
                 1000,
-                "MERN Developer",
+                "Full Stack Develope",
                 1000,
-                "Software Student",
+                "AI Engineer",
                 1000,
               ]}
               wrapper="span"
@@ -38,7 +38,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-center sm:text-left text-base sm:text-lg mt-3 mb-6 lg:text-xl md:pr-32 ">
-          Fourth-year software engineering student specializing in AI and a versatile full-stack developer.          </p>
+          Software engineer specializing in AI and a backend-heavy full-stack developer.          </p>
           <div>
             <Link
               href="#contact"
