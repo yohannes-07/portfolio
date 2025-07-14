@@ -18,7 +18,7 @@ const TAB_DATA = [
         <li>Express.js</li>
         <li>NodeJs</li>
         <li>ExpressJs</li>
-        <li></li>SQL</div>
+        <li>SQL</li></div>
         <div><li>FastAPI</li>
         <li>Django, Flask</li>
         <li>Cloud(AWS, GCP)</li>
