@@ -1,11 +1,17 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 const HeroSection = () => {
+  const [currentTitle, setCurrentTitle] = useState("");
+  
+  const handleTypeAnimationChange = (state: string) => {
+    setCurrentTitle(state);
+  };
+
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-8">
@@ -17,7 +23,7 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl xl:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m{" "}
+              Hello, I&apos;m {currentTitle.startsWith("AI") ? "an" : "a"}{" "}
             </span>
             <br></br>
             <TypeAnimation
@@ -25,18 +31,21 @@ const HeroSection = () => {
               sequence={[
                 "Yohannes",
                 1000,
-                "a Software Engineer",
+                "Software Engineer",
                 1000,
-                "an AI Engineer",
+                "AI Engineer",
                 1000,
               ]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
+              preRenderFirstString={true}
+              callback={(state) => handleTypeAnimationChange(state.toString())}
             />
           </h1>
           <p className="text-[#ADB7BE] text-center sm:text-left text-base sm:text-lg mt-3 mb-6 lg:text-xl md:pr-32 ">
-          Software engineer specializing in AI and a backend-heavy full-stack developer.          </p>
+            Software engineer specializing in AI and a backend-heavy full-stack developer.
+          </p>
           <div>
             <Link
               href="#contact"
@@ -47,7 +56,7 @@ const HeroSection = () => {
             <Link
               href="/cv.pdf"
               download='cv'
-              className="px-1  inline-block py-1  sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+              className="px-1 inline-block py-1 sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
@@ -61,11 +70,11 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full  w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[600px] relative">
+          <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[600px] relative">
             <Image
               src="/images/hero-image.jpg"
               alt="hero image"
-              className="absolute rounded-full  transform -translate-x-1/2 -translate-y-1/2 left-3/4 top-1/2 sm:left-1/2"
+              className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 left-3/4 top-1/2 sm:left-1/2"
               width={450}
               height={500}
             />
