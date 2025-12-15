@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar />
       <div className="container mt-24 mx-auto sm:px-12 bg-[#121212] py-4">
         <HeroSection />
-        <AchievementsSection />
+        {/* <AchievementsSection /> */}
         <AboutSection />
         <ProjectsSection />
         <EmailSection />

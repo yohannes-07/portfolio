@@ -10,20 +10,20 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2 flex gap-12 ">
         <div><li>Python</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>React.js</li>
-        <li>Next.js</li></div>
-        <div><li>Nest.js</li>
-        <li>Express.js</li>
-        <li>NodeJs</li>
-        <li>ExpressJs</li>
-        <li>SQL</li></div>
-        <div><li>FastAPI</li>
-        <li>Django, Flask</li>
+        <li>FastAPI, Django</li>
+        <li>LLMs, OpenAI</li>
+        <li>Langchain, RAG, Agents</li>
+        <li>Generative AI</li></div>
+        <div><li>Apache Beam, Dataflow</li>
+        <li>SQL, Postgres, ETL</li>
+        <li>Apache Spark</li>
         <li>Cloud(AWS, GCP)</li>
-        <li>Apache Beam, Dataflow</li>
-        <li>Langchain, RAG, Agents</li></div>
+        <li>Power BI</li></div>
+        <div><li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>Next.js</li>
+        <li>Express.js</li>
+        <li>Nest.js</li></div>
         
        
     
@@ -109,7 +109,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-           AI-focused Software Engineer from Addis Ababa University with hands-on experience in AI, cloud systems, and full-stack development. At Addis Home Finder, I built a media monitoring system using fingerprinting algorithms for ad detection. With Startup Agile, I developed FastAPI/AWS tools, LLM-powered APIs, and a Discord bot for crypto traders. At AAU, I contributed to ORIDMS and government analytics. On Aladia’s analytics team, I engineered a CDC pipeline using GCP, MongoDB, and Apache Beam. Passionate about solving complex problems and collaborating in tech.
+           Data and AI focused engineer from Addis Ababa University with strong experience in backend systems data engineering and applied AI. At Artekia I built LLM powered tools chatbots and multi agent systems for document workflows legal RAG and travel support. At Aladia I engineered a real time CDC data pipeline on GCP using MongoDB BigQuery Dataflow and Apache Beam. With StartupAgile I developed FastAPI and AWS services LLM based APIs and a Discord customer support bot for crypto traders. Earlier at Addis Home Finder I built a media monitoring and ad detection system using audio fingerprinting. I enjoy building reliable data driven systems and working closely with technical teams.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

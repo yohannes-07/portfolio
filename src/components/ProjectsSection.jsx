@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "Ecommerce Admin",
-    description: "Ecommerce Admin full stack web app",
+    description: "Full-stack administrative web application for an e-commerce platform.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yohannes-07/e-commerce-admin",
@@ -16,48 +16,48 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Ecommerce Store",
-    description: "Ecommerce Store frontend web app",
+    title: "CDC ETL Pipeline (GCP)",
+    description: "Engineered a real-time Change Data Capture pipeline using Apache Beam, Dataflow, and BigQuery.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/yohannes-07/ecommerce-store",
-    previewUrl: "/",
+    tag: ["All", "Data"],
+    gitUrl: "#", 
+    previewUrl: "https://aladia.io/",
   },
   {
     id: 3,
-    title: "Social Media web app",
-    description: "Social media web application with limited features",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/yohannes-07/Social-media-web",
-    previewUrl: "/",
+    title: "Legal RAG Chatbot", 
+    description: "Built a legal document RAG chatbot for Spanish police officers for intelligent search.", 
+    image: "/images/projects/3.png", 
+    tag: ["All", "AI"],
+    gitUrl: "#", 
+    previewUrl: "https://chatpol.com/",
   },
   {
     id: 4,
     title: "Amharic Text Summarization",
-    description: "Fine tuned mt5 model for amharic text summarization",
+    description: "Fine-tuned MT5 model for Amharic extractive summarization, achieving a Rouge score of 0.75.",
     image: "/images/projects/4.png",
-      tag: ["All", "AI"],
+    tag: ["All", "AI"],
     gitUrl: "https://huggingface.co/yohannesahunm/mt5-small-Amharic-text-summaization",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "Chatbot",
-    description: "Made with langgraph, FastAPI and React",
+    title: "Multi-Agent Chatbot",
+    description: "A web-searching, reasoning chatbot built with LangGraph, Groq/Gemini LLMs, and a FastAPI backend.",
     image: "/images/projects/5.png",
     tag: ["All", "AI"],
     gitUrl: "https://github.com/yohannes-07/chatbot",
-    previewUrl: "/",
+    previewUrl: "https://chatbot-73h5.vercel.app/",
   },
   {
     id: 6,
-    title: "Portfolio",
-    description: "Portfolio app made with NextJs",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/yohannes-07/portfolio",
-    previewUrl: "/",
+    title: "Umoja Airways Multi-Agent System", 
+    description: "Created a LangGraph system for bookings, flight-status, and travel support.", 
+    image: "/images/projects/6.png", 
+    tag: ["All", "AI"],
+    gitUrl: "#", 
+    previewUrl: "https://www.umojaairways.com/",
   },
 ];
 
@@ -97,8 +97,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="AI"
-          isSelected={tag === "AI"}
+          name="AI/Data"
+          isSelected={tag === "AI" || tag === "Data"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

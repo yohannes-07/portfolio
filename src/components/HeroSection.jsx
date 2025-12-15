@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
+    <section className="lg:py-8">
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-8">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -17,7 +17,7 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl xl:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m{" "}
+              Hi, I&apos;m{" "}
             </span>
             <br></br>
             <TypeAnimation
@@ -25,9 +25,9 @@ const HeroSection = () => {
               sequence={[
                 "Yohannes",
                 1000,
-                "Software Engineer",
+                "Backend Engineer",
                 1000,
-                "AI Engineer",
+                "an AI Engineer",
                 1000,
               ]}
               wrapper="span"
@@ -36,7 +36,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-center sm:text-left text-base sm:text-lg mt-3 mb-6 lg:text-xl md:pr-32 ">
-          Software engineer specializing in AI and a backend-heavy full-stack developer.          </p>
+          Backend and data engineer specializing in AI and backend focused system development         </p>
           <div>
             <Link
               href="#contact"
@@ -61,9 +61,9 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full  w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[600px] relative">
+          <div className="rounded-full  w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[600px] relative">
             <Image
-              src="/images/hero-image.jpg"
+              src="/images/image.png"
               alt="hero image"
               className="absolute rounded-full  transform -translate-x-1/2 -translate-y-1/2 left-3/4 top-1/2 sm:left-1/2"
               width={450}
